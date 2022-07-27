@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.headerHome{
+  background-color: black;
+  height: 6rem;
+}
+
+.navHome{
+  font-size: 10rem;
+}
+
+.img1{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+}
+
+.estilo{
+  font-size: 5rem;
+  color: black;
+}
