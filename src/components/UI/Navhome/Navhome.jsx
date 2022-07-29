@@ -1,24 +1,12 @@
 import React from "react";
-import { Ancla } from "../Ancla/Ancla";
+import { Link } from "react-router-dom"
 
 export const Navhome = () => {
   return (
     <nav className="navHome">
-      <Ancla
-        estilo="contador"
-        reference="https://www.google.com/"
-        textAncla="Home"
-      />
-      <Ancla 
-        estilo="listNames" 
-        reference="https://www.google.com/" 
-        textAncla="Lista Nombres" 
-      />
-      <Ancla 
-        estilo="changeStyle" 
-        reference="https://www.google.com/" 
-        textAncla="ChangeStyle" 
-      />
+      <Link to="/">Home</Link>
+      <Link to="/listName">ListNames</Link>
+      <Link to="/printTxt">PrintText</Link>
     </nav>
   );
 };
