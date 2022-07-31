@@ -7,6 +7,8 @@ export const Navhome = () => {
       <Link to="/">Home</Link>
       <Link to="/listName">ListNames</Link>
       <Link to="/printTxt">PrintText</Link>
+      <Link to="/mensaje">Mensaje</Link>
+      <Link to="/reloj">Reloj</Link>
     </nav>
   );
 };

@@ -11,6 +11,10 @@ export const Home = ({style0, style1}) => {
       setCounter(counter + 1);
   }
 
+  const borrar = () => {
+    setCounter(0)
+  }
+
   useEffect(() => {
     counter >= 10 ? setStyleTitle(style1) : setStyleTitle(style0);
   },[counter])
@@ -23,6 +27,7 @@ export const Home = ({style0, style1}) => {
             <p>{counter}</p>
             <div className="botones">
               <button className="restar" onClick={()=>{setCounter(counter - 1)}}>Restar</button>
+              <button className="borrar" onClick={borrar}>Borrar</button>
               <button className="sumar" onClick={sumar}>Sumar</button>
             </div>
         </div>
