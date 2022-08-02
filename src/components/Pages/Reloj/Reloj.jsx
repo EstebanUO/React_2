@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { HeaderHome } from '../../Layouts/HeaderHome/HeaderHome'
 
 export const Reloj = () => {
 
     const [time, setTime] = useState(0);
 
-    useEffect(() =>{
-        setInterval(() => {
-            setTime(new Date().toLocaleTimeString())
-        });
-    });
+    setInterval(() => {
+        setTime(new Date().toLocaleTimeString())
+    }, 1000);
 
   return (
     <div>
